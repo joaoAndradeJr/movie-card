@@ -22,7 +22,7 @@ jobs:
         if: wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v1
-        id: wait-for-build.outputs.conclusion == 'success'
+        if: wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
           environment: staging
