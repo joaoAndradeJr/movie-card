@@ -19,10 +19,10 @@ jobs:
       - name: React Scripts evaluator step
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@v1
-        if: wait-for-build.outputs.conclusion == 'success'
+        if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v1
-        if: wait-for-build.outputs.conclusion == 'success'
+        if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
           environment: staging
