@@ -162,6 +162,10 @@ O componente `App` deve renderizar um componente `Header`.
 
 O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
 
+#### 17 - Adicione proptypes a todos os componentes
+
+Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
+
 ---
 
 ## Instruções para entregar seu projeto:
