@@ -148,7 +148,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
 #### 13 Crie um componente chamado `Rating`
 
-Esse componene representa a avaliação de um filme.
+Esse componente representa a avaliação de um filme.
 
 #### 14 Renderize a nota de um filme dentro de `Rating`
 
