@@ -11,8 +11,6 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Sumário
 
-- [Boas vindas ao repositório do projeto de Movie Cards Library!](#boas-vindas-ao-repositório-do-projeto-de-movie-cards-library)
-- [Sumário](#sumário)
 - [Habilidades](#habilidades)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
@@ -151,7 +149,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 ## Durante o desenvolvimento
 
-* ⚠ **PULL REQUESTS COM ISSUES NO CODE CLIMATE NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
+* ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
 
 * Faça `commits` das alterações que você fizer no código regularmente
 
@@ -426,7 +424,7 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
 
 ### 17 - Adicione proptypes a todos os componentes
 
-Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
+Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O ESLint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
 
 ---
 
