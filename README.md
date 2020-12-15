@@ -248,15 +248,18 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ## Linter
 
-Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint e StyleLint.
+Para garantir a qualidade do código, vamos utilizar neste projeto o linter `ESLint` e `StyleLint`.
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
-e de fácil manutenção! Para roda-los localmente no projeto, execute o comando abaixo:
+e de fácil manutenção! Para roda-los localmente no projeto, execute os comandos abaixo:
 
-  - `npm run lint`
+  ```bash
+npm run lint
+npm run lint:styles
+```
 
 
-⚠️ PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
-ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO! ⚠️
+⚠️ **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
+ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
 
 ---
 
