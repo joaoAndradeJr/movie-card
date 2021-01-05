@@ -23,7 +23,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [Revisando um pull request](#revisando-um-pull-request)
 - [Como desenvolver](#como-desenvolver)
   - [Linter](#linter)
-  - [Dica: desativanto testes](#dica-desativanto-testes)
+  - [Dica: desativando testes](#dica-desativando-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
     - [1 - Crie um componente chamado `Header`](#1---crie-um-componente-chamado-header)
