@@ -26,22 +26,27 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Dica: desativando testes](#dica-desativando-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
-    - [1.1 - Crie um componente chamado `Header`](#11---crie-um-componente-chamado-header)
-    - [1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`](#12---renderize-o-texto-movie-cards-library-dentro-de-header)
-    - [2.1 - Crie um componente chamado `MovieList`](#21---crie-um-componente-chamado-movielist)
-    - [2.2 - Renderize componentes `MovieCard` dentro de `MovieList`](#22---renderize-componentes-moviecard-dentro-de-movielist)
-    - [2.3 - Passe uma key para cada `MovieCard` renderizado](#23---passe-uma-key-para-cada-moviecard-renderizado)
-    - [3.1 - Crie um componente chamado `MovieCard`](#31---crie-um-componente-chamado-moviecard)
-    - [3.2 - Renderize a imagem do filme](#32---renderize-a-imagem-do-filme)
-    - [3.3 - Renderize o título do filme](#33---renderize-o-título-do-filme)
-    - [3.4 - Renderize o subtítulo do filme](#34---renderize-o-subtítulo-do-filme)
-    - [3.5 - Renderize a sinopse do filme](#35---renderize-a-sinopse-do-filme)
-    - [3.6 - Renderize um componente `Rating` dentro de `MovieCard`](#36---renderize-um-componente-rating-dentro-de-moviecard)
-    - [3.7 - Passe como prop para o componente `Rating` o atributo `rating`](#37---passe-como-prop-para-o-componente-rating-o-atributo-rating)
-    - [4.1 - Crie um componente chamado `Rating`](#41---crie-um-componente-chamado-rating)
-    - [4.2 - Renderize a nota de um filme dentro de `Rating`](#42---renderize-a-nota-de-um-filme-dentro-de-rating)
-    - [5.1 - `App` deve renderizar `Header`](#51---app-deve-renderizar-header)
-    - [5.2 - `App` deve renderizar `MovieList`](#52---app-deve-renderizar-movielist)
+    - [1 - Componente `<Header />`](#1---componente-header-)
+      - [1.1 - Crie um componente chamado `Header`](#11---crie-um-componente-chamado-header)
+      - [1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`](#12---renderize-o-texto-movie-cards-library-dentro-de-header)
+    - [2 - Componente `<MovieList />`](#1---componente-movielist-)
+      - [2.1 - Crie um componente chamado `MovieList`](#21---crie-um-componente-chamado-movielist)
+      - [2.2 - Renderize componentes `MovieCard` dentro de `MovieList`](#22---renderize-componentes-moviecard-dentro-de-movielist)
+      - [2.3 - Passe uma key para cada `MovieCard` renderizado](#23---passe-uma-key-para-cada-moviecard-renderizado)
+    - [3 - Componente `<MovieCard />`](#1---componente-moviecard-)
+      - [3.1 - Crie um componente chamado `MovieCard`](#31---crie-um-componente-chamado-moviecard)
+      - [3.2 - Renderize a imagem do filme](#32---renderize-a-imagem-do-filme)
+      - [3.3 - Renderize o título do filme](#33---renderize-o-título-do-filme)
+      - [3.4 - Renderize o subtítulo do filme](#34---renderize-o-subtítulo-do-filme)
+      - [3.5 - Renderize a sinopse do filme](#35---renderize-a-sinopse-do-filme)
+      - [3.6 - Renderize um componente `Rating` dentro de `MovieCard`](#36---renderize-um-componente-rating-dentro-de-moviecard)
+      - [3.7 - Passe como prop para o componente `Rating` o atributo `rating`](#37---passe-como-prop-para-o-componente-rating-o-atributo-rating)
+    - [4 - Componente `<Rating />`](#1---componente-rating-)
+      - [4.1 - Crie um componente chamado `Rating`](#41---crie-um-componente-chamado-rating)
+      - [4.2 - Renderize a nota de um filme dentro de `Rating`](#42---renderize-a-nota-de-um-filme-dentro-de-rating)
+    - [5 - Componente `<App />`](#1---componente-app-)
+      - [5.1 - `App` deve renderizar `Header`](#51---app-deve-renderizar-header)
+      - [5.2 - `App` deve renderizar `MovieList`](#52---app-deve-renderizar-movielist)
     - [6 - Adicione proptypes a todos os componentes](#6---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
@@ -290,6 +295,8 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 ---
 
 # Requisitos do projeto
+
+Para melhor orientação nesse primeiro contato com React, os requisitos do projeto contém *subitens* para guiar seu cumprimento. Assim sendo o requisito 1, por exemplo, contém os subitens `1.1` e `1.2`, com cada subitem associado a um teste. Um requisito só é considerado completo quando todos os seus subitens estão feitos. **Requisitos parcialmente feitos não são considerados!**
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
