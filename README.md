@@ -293,7 +293,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
-### <Header /> component
+### `<Header />` component
 #### 1 - Crie um componente chamado `Header`
 
 Esse componente representará o cabeçalho da página.
@@ -312,7 +312,7 @@ O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro 
   - O `h1` deve ser renderizado pelo componente `Header`.
 
 
-### <MovieList /> component
+### `<MovieList />` component
 #### 3 - Crie um componente chamado `MovieList`
 
 Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
@@ -337,7 +337,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
  - Cada `MovieCard` renderizado tem como `key` o título do filme.
 
-### <MovieCard /> component
+### `<MovieCard />` component
 #### 6 - Crie um componente chamado `MovieCard`
 
 Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
@@ -396,7 +396,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - O componente `Rating` recebe uma `prop` chamada `rating`.
   - O valor da *prop* `rating` é a propriedade `rating` do filme.
 
-### <Rating /> component
+### `<Rating />` component
 #### 13 - Crie um componente chamado `Rating`
 
 Esse componente representa a avaliação de um filme.
@@ -413,7 +413,7 @@ Esse componente representa a avaliação de um filme.
 
   - O componente `Rating` é renderizado dentro de um elemento com a classe `rating`.
 
-### <App /> component
+### `<App />` component
 #### 15 - `App` deve renderizar `Header`
 
 O componente `App` deve renderizar um componente `Header`.
