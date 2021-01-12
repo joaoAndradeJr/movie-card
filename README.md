@@ -3,7 +3,7 @@
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
 Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto de Movie Cards Library!
+# Boas vindas ao repositório do projeto Movie Cards Library!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
@@ -44,7 +44,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [4 - Crie um componente `<Rating />`](#4---crie-um-componente-rating-)
       - [4.1 - Renderize o componente `<Rating />`](#41---renderize-o-componente-rating-)
       - [4.2 - Renderize a nota de um filme dentro de `Rating`](#42---renderize-a-nota-de-um-filme-dentro-de-rating)
-    - [5 - Crie um componente `<App />`](#5---crie-um-componente-app-)
+    - [5 - Crie um componente `<App />`](#1---crie-um-componente-app-)
       - [5.1 - Renderize `<Header />` dentro do componente `<App />`](#51---renderize-header--dentro-do-componente-app-)
       - [5.2 - Renderize `<MovieList />` dentro do componente `<App />`](#52---renderize-movielist--dentro-do-componente-app-)
     - [6 - Adicione PropTypes a todos os componentes](#6---adicione-proptypes-a-todos-os-componentes)
