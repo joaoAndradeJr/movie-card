@@ -16,8 +16,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
   - [Data de Entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto:](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver:](#antes-de-começar-a-desenvolver)
+- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
   - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
     - [Revisando um pull request](#revisando-um-pull-request)
@@ -86,14 +86,14 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
   - Serão `X` dias de projeto.
   - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
 
-# Instruções para entregar seu projeto:
+# Instruções para entregar seu projeto
 
-## Antes de começar a desenvolver:
+## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-0x-block12-project-movie-cards-library.git`.
+  * `git clone git@github.com:tryber/sd-0x-project-movie-cards-library.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-block12-project-movie-cards-library`
+    * `cd sd-0x-project-movie-cards-library`
 
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
@@ -114,7 +114,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 4. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-block12-project-movie-cards-library**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-project-movie-cards-library**_
   * Crie a pasta `components` e o arquivo `Header.jsx`
     * Exemplo:
       * `mkdir src/components`
@@ -137,13 +137,13 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
   * Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library`
 
 7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-block12-project-movie-cards-library/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-block12-project-movie-cards-library/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -248,9 +248,9 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ## Linter
 
-Para garantir a qualidade do código, vamos utilizar neste projeto o linter `ESLint` e `StyleLint`.
+Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `StyleLint`.
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
-e de fácil manutenção! Para roda-los localmente no projeto, execute os comandos abaixo:
+e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
 
   ```bash
 npm run lint
@@ -293,7 +293,8 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
-### 1 - Crie um componente chamado `Header`
+### <Header /> component
+#### 1 - Crie um componente chamado `Header`
 
 Esse componente representará o cabeçalho da página.
 
@@ -301,7 +302,7 @@ Esse componente representará o cabeçalho da página.
 
   - O componente `Header` é renderizado sem quebrar a aplicação.
 
-### 2 - Renderize o texto "Movie Cards Library" dentro de `Header`
+#### 2 - Renderize o texto "Movie Cards Library" dentro de `Header`
 
 O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
 
@@ -310,7 +311,9 @@ O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro 
   - O texto "Movie Cards Library" está dentro de uma tag `h1`.
   - O `h1` deve ser renderizado pelo componente `Header`.
 
-### 3 - Crie um componente chamado `MovieList`
+
+### <MovieList /> component
+#### 3 - Crie um componente chamado `MovieList`
 
 Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
@@ -318,7 +321,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
   - O componente `MovieList` é renderizado sem quebrar a aplicação.
 
-### 4 - Renderize componentes `MovieCard` dentro de `MovieList`
+#### 4 - Renderize componentes `MovieCard` dentro de `MovieList`
 
 `MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
 
@@ -326,7 +329,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
   - O componente `MovieList` renderiza a quantidade correta de `MovieCard`.
 
-### 5 - Passe uma key para cada `MovieCard` renderizado
+#### 5 - Passe uma key para cada `MovieCard` renderizado
 
 `MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
 
@@ -334,7 +337,8 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
  - Cada `MovieCard` renderizado tem como `key` o título do filme.
 
-### 6 - Crie um componente chamado `MovieCard`
+### <MovieCard /> component
+#### 6 - Crie um componente chamado `MovieCard`
 
 Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
@@ -342,7 +346,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O componente `MovieCard` é renderizado sem quebrar a aplicação.
 
-### 7 - Renderize a imagem do filme
+#### 7 - Renderize a imagem do filme
 
 `MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
 
@@ -351,7 +355,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - A imagem é renderizada dentro de uma tag `img`.
   - O atributo `src` da imagem deve ter o valor de `imagePath`.
 
-### 8 - Renderize o título do filme
+#### 8 - Renderize o título do filme
 
 `MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
 
@@ -359,7 +363,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O título do filme é renderizado dentro de uma tag `h4`.
 
-### 9 - Renderize o subtítulo do filme
+#### 9 - Renderize o subtítulo do filme
 
 `MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
 
@@ -367,7 +371,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O subtítulo do filme é renderizado dentro de uma tag `h5`.
 
-### 10 - Renderize a sinopse do filme
+#### 10 - Renderize a sinopse do filme
 
 `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
@@ -375,7 +379,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - A sinopse do filme é renderizada dentro de uma tag `p`.
 
-### 11 - Renderize um componente `Rating` dentro de `MovieCard`
+#### 11 - Renderize um componente `Rating` dentro de `MovieCard`
 
 `MovieCard` deve renderizar um componente `Rating`.
 
@@ -383,7 +387,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O componente `Rating` é renderizado pelo `MovieCard`.
 
-### 12 - Passe como prop para o componente `Rating` o atributo `rating`
+#### 12 - Passe como prop para o componente `Rating` o atributo `rating`
 
 `MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
 
@@ -392,7 +396,8 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - O componente `Rating` recebe uma `prop` chamada `rating`.
   - O valor da *prop* `rating` é a propriedade `rating` do filme.
 
-### 13 - Crie um componente chamado `Rating`
+### <Rating /> component
+#### 13 - Crie um componente chamado `Rating`
 
 Esse componente representa a avaliação de um filme.
 
@@ -400,7 +405,7 @@ Esse componente representa a avaliação de um filme.
 
   - O componente `Rating` é renderizado sem quebrar a aplicação.
 
-### 14 - Renderize a nota de um filme dentro de `Rating`
+#### 14 - Renderize a nota de um filme dentro de `Rating`
 
 `Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
 
@@ -408,7 +413,8 @@ Esse componente representa a avaliação de um filme.
 
   - O componente `Rating` é renderizado dentro de um elemento com a classe `rating`.
 
-### 15 - `App` deve renderizar `Header`
+### <App /> component
+#### 15 - `App` deve renderizar `Header`
 
 O componente `App` deve renderizar um componente `Header`.
 
@@ -416,7 +422,7 @@ O componente `App` deve renderizar um componente `Header`.
 
   - Apenas um componente `Header` é renderizado pelo componente `App`.
 
-### 16 - `App` deve renderizar `MovieList`
+#### 16 - `App` deve renderizar `MovieList`
 
 O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
 
@@ -425,7 +431,7 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
   - Apenas um componente `MovieList` é renderizado pelo componente `App`.
   - `MovieList` recebe como *prop* `movie` a lista do arquivo `data.js`
 
-### 17 - Adicione proptypes a todos os componentes
+### Adicione proptypes a todos os componentes
 
 Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O ESLint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
 
