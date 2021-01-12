@@ -1,18 +1,18 @@
 {
   "requirements": [{
-    "description": "<Header /> component",
+    "description": "1 - Componente <Header />",
     "bonus": false
   }, {
-    "description": "<MovieList /> component",
+    "description": "2 - Componente <MovieList />",
     "bonus": false
   }, {
-    "description": "<MovieCard /> component",
+    "description": "3 - Componente <MovieCard />",
     "bonus": false
   }, {
-    "description": "<Rating /> component",
+    "description": "4 - Componente <Rating />",
     "bonus": false
   }, {
-    "description": "<App /> component",
+    "description": "5 - Componente <App />",
     "bonus": false
   }]
 }
