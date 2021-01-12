@@ -26,23 +26,23 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Dica: desativando testes](#dica-desativando-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
-    - [1 - Crie um componente chamado `Header`](#1---crie-um-componente-chamado-header)
-    - [2 - Renderize o texto "Movie Cards Library" dentro de `Header`](#2---renderize-o-texto-movie-cards-library-dentro-de-header)
-    - [3 - Crie um componente chamado `MovieList`](#3---crie-um-componente-chamado-movielist)
-    - [4 - Renderize componentes `MovieCard` dentro de `MovieList`](#4---renderize-componentes-moviecard-dentro-de-movielist)
-    - [5 - Passe uma key para cada `MovieCard` renderizado](#5---passe-uma-key-para-cada-moviecard-renderizado)
-    - [6 - Crie um componente chamado `MovieCard`](#6---crie-um-componente-chamado-moviecard)
-    - [7 - Renderize a imagem do filme](#7---renderize-a-imagem-do-filme)
-    - [8 - Renderize o título do filme](#8---renderize-o-título-do-filme)
-    - [9 - Renderize o subtítulo do filme](#9---renderize-o-subtítulo-do-filme)
-    - [10 - Renderize a sinopse do filme](#10---renderize-a-sinopse-do-filme)
-    - [11 - Renderize um componente `Rating` dentro de `MovieCard`](#11---renderize-um-componente-rating-dentro-de-moviecard)
-    - [12 - Passe como prop para o componente `Rating` o atributo `rating`](#12---passe-como-prop-para-o-componente-rating-o-atributo-rating)
-    - [13 - Crie um componente chamado `Rating`](#13---crie-um-componente-chamado-rating)
-    - [14 - Renderize a nota de um filme dentro de `Rating`](#14---renderize-a-nota-de-um-filme-dentro-de-rating)
-    - [15 - `App` deve renderizar `Header`](#15---app-deve-renderizar-header)
-    - [16 - `App` deve renderizar `MovieList`](#16---app-deve-renderizar-movielist)
-    - [17 - Adicione proptypes a todos os componentes](#17---adicione-proptypes-a-todos-os-componentes)
+    - [1.1 - Crie um componente chamado `Header`](#1.1---crie-um-componente-chamado-header)
+    - [1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`](#1.2---renderize-o-texto-movie-cards-library-dentro-de-header)
+    - [2.1 - Crie um componente chamado `MovieList`](#2.1---crie-um-componente-chamado-movielist)
+    - [2.2 - Renderize componentes `MovieCard` dentro de `MovieList`](#2.2---renderize-componentes-moviecard-dentro-de-movielist)
+    - [3.1 - Passe uma key para cada `MovieCard` renderizado](#3.1---passe-uma-key-para-cada-moviecard-renderizado)
+    - [3.2 - Crie um componente chamado `MovieCard`](#3.2---crie-um-componente-chamado-moviecard)
+    - [3.3 - Renderize a imagem do filme](#3.3---renderize-a-imagem-do-filme)
+    - [3.4 - Renderize o título do filme](#3.4---renderize-o-título-do-filme)
+    - [3.5 - Renderize o subtítulo do filme](#3.5---renderize-o-subtítulo-do-filme)
+    - [3.6 - Renderize a sinopse do filme](#3.6---renderize-a-sinopse-do-filme)
+    - [3.7 - Renderize um componente `Rating` dentro de `MovieCard`](#3.7---renderize-um-componente-rating-dentro-de-moviecard)
+    - [4.1 - Passe como prop para o componente `Rating` o atributo `rating`](#4.1---passe-como-prop-para-o-componente-rating-o-atributo-rating)
+    - [4.2 - Crie um componente chamado `Rating`](#4.2---crie-um-componente-chamado-rating)
+    - [4.3 - Renderize a nota de um filme dentro de `Rating`](#4.3---renderize-a-nota-de-um-filme-dentro-de-rating)
+    - [5.1 - `App` deve renderizar `Header`](#5.1---app-deve-renderizar-header)
+    - [5.2 - `App` deve renderizar `MovieList`](#5.2---app-deve-renderizar-movielist)
+    - [6 - Adicione proptypes a todos os componentes](#6---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
@@ -294,7 +294,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
 ### 1 - Componente `<Header />`
-#### Crie um componente chamado `Header`
+#### 1.1 - Crie um componente chamado `Header`
 
 Esse componente representará o cabeçalho da página.
 
@@ -302,9 +302,9 @@ Esse componente representará o cabeçalho da página.
 
   - O componente `Header` é renderizado sem quebrar a aplicação.
 
-#### Renderize o texto "Movie Cards Library" dentro de `Header`
+#### 1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`
 
-O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
+O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`
 
 **O que será verificado:**
 
@@ -313,7 +313,7 @@ O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro 
 
 
 ### 2 - Componente `<MovieList />`
-#### Crie um componente chamado `MovieList`
+#### 2.1 - Crie um componente chamado `MovieList`
 
 Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
@@ -321,7 +321,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
   - O componente `MovieList` é renderizado sem quebrar a aplicação.
 
-#### Renderize componentes `MovieCard` dentro de `MovieList`
+#### 2.2 - Renderize componentes `MovieCard` dentro de `MovieList`
 
 `MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
 
@@ -329,7 +329,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
   - O componente `MovieList` renderiza a quantidade correta de `MovieCard`.
 
-#### Passe uma key para cada `MovieCard` renderizado
+#### 2.3 - Passe uma key para cada `MovieCard` renderizado
 
 `MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
 
@@ -338,7 +338,7 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
  - Cada `MovieCard` renderizado tem como `key` o título do filme.
 
 ### 3 - Componente `<MovieCard />`
-#### Crie um componente chamado `MovieCard`
+#### 3.1 - Crie um componente chamado `MovieCard`
 
 Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
@@ -346,7 +346,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O componente `MovieCard` é renderizado sem quebrar a aplicação.
 
-#### Renderize a imagem do filme
+#### 3.2 - Renderize a imagem do filme
 
 `MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
 
@@ -355,7 +355,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - A imagem é renderizada dentro de uma tag `img`.
   - O atributo `src` da imagem deve ter o valor de `imagePath`.
 
-#### Renderize o título do filme
+#### 3.3 - Renderize o título do filme
 
 `MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
 
@@ -363,7 +363,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O título do filme é renderizado dentro de uma tag `h4`.
 
-#### Renderize o subtítulo do filme
+#### 3.4 - Renderize o subtítulo do filme
 
 `MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
 
@@ -371,7 +371,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O subtítulo do filme é renderizado dentro de uma tag `h5`.
 
-#### Renderize a sinopse do filme
+#### 3.5 - Renderize a sinopse do filme
 
 `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
@@ -379,7 +379,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - A sinopse do filme é renderizada dentro de uma tag `p`.
 
-#### Renderize um componente `Rating` dentro de `MovieCard`
+#### 3.6 - Renderize um componente `Rating` dentro de `MovieCard`
 
 `MovieCard` deve renderizar um componente `Rating`.
 
@@ -387,7 +387,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
   - O componente `Rating` é renderizado pelo `MovieCard`.
 
-#### Passe como prop para o componente `Rating` o atributo `rating`
+#### 3.7 - Passe como prop para o componente `Rating` o atributo `rating`
 
 `MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
 
@@ -397,7 +397,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - O valor da *prop* `rating` é a propriedade `rating` do filme.
 
 ### 4 - Componente `<Rating />`
-#### Crie um componente chamado `Rating`
+#### 4.1 - Crie um componente chamado `Rating`
 
 Esse componente representa a avaliação de um filme.
 
@@ -405,7 +405,7 @@ Esse componente representa a avaliação de um filme.
 
   - O componente `Rating` é renderizado sem quebrar a aplicação.
 
-#### Renderize a nota de um filme dentro de `Rating`
+#### 4.2 - Renderize a nota de um filme dentro de `Rating`
 
 `Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
 
@@ -414,7 +414,7 @@ Esse componente representa a avaliação de um filme.
   - O componente `Rating` é renderizado dentro de um elemento com a classe `rating`.
 
 ### 5 - Componente `<App />`
-#### `App` deve renderizar `Header`
+#### 5.1 - `App` deve renderizar `Header`
 
 O componente `App` deve renderizar um componente `Header`.
 
@@ -422,7 +422,7 @@ O componente `App` deve renderizar um componente `Header`.
 
   - Apenas um componente `Header` é renderizado pelo componente `App`.
 
-#### `App` deve renderizar `MovieList`
+#### 5.2 - `App` deve renderizar `MovieList`
 
 O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
 
