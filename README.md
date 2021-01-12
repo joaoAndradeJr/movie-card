@@ -27,26 +27,26 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
     - [1 - Componente `<Header />`](#1---componente-header-)
-      - [1.1 - Crie um componente chamado `Header`](#11---crie-um-componente-chamado-header)
-      - [1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`](#12---renderize-o-texto-movie-cards-library-dentro-de-header)
+      - [1.1 - Crie um componente chamado `<Header />`](#11---crie-um-componente-chamado-header)
+      - [1.2 - Renderize o texto "Movie Cards Library" dentro de `<Header />`](#12---renderize-o-texto-movie-cards-library-dentro-de-header)
     - [2 - Componente `<MovieList />`](#1---componente-movielist-)
       - [2.1 - Crie um componente chamado `MovieList`](#21---crie-um-componente-chamado-movielist)
-      - [2.2 - Renderize componentes `MovieCard` dentro de `MovieList`](#22---renderize-componentes-moviecard-dentro-de-movielist)
-      - [2.3 - Passe uma key para cada `MovieCard` renderizado](#23---passe-uma-key-para-cada-moviecard-renderizado)
+      - [2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`](#22---renderize-componentes-moviecard-dentro-de-movielist)
+      - [2.3 - Passe uma key para cada `<MovieCard />` renderizado](#23---passe-uma-key-para-cada-moviecard-renderizado)
     - [3 - Componente `<MovieCard />`](#1---componente-moviecard-)
-      - [3.1 - Crie um componente chamado `MovieCard`](#31---crie-um-componente-chamado-moviecard)
+      - [3.1 - Crie um componente chamado `<MovieCard />`](#31---crie-um-componente-chamado-moviecard)
       - [3.2 - Renderize a imagem do filme](#32---renderize-a-imagem-do-filme)
       - [3.3 - Renderize o título do filme](#33---renderize-o-título-do-filme)
       - [3.4 - Renderize o subtítulo do filme](#34---renderize-o-subtítulo-do-filme)
       - [3.5 - Renderize a sinopse do filme](#35---renderize-a-sinopse-do-filme)
-      - [3.6 - Renderize um componente `Rating` dentro de `MovieCard`](#36---renderize-um-componente-rating-dentro-de-moviecard)
+      - [3.6 - Renderize um componente `Rating` dentro de `<MovieCard />`](#36---renderize-um-componente-rating-dentro-de-moviecard)
       - [3.7 - Passe como prop para o componente `Rating` o atributo `rating`](#37---passe-como-prop-para-o-componente-rating-o-atributo-rating)
     - [4 - Componente `<Rating />`](#1---componente-rating-)
       - [4.1 - Crie um componente chamado `Rating`](#41---crie-um-componente-chamado-rating)
       - [4.2 - Renderize a nota de um filme dentro de `Rating`](#42---renderize-a-nota-de-um-filme-dentro-de-rating)
     - [5 - Componente `<App />`](#1---componente-app-)
-      - [5.1 - `App` deve renderizar `Header`](#51---app-deve-renderizar-header)
-      - [5.2 - `App` deve renderizar `MovieList`](#52---app-deve-renderizar-movielist)
+      - [5.1 - `<App />` deve renderizar `<Header />`](#51---app-deve-renderizar-header)
+      - [5.2 - `<App />` deve renderizar `MovieList`](#52---app-deve-renderizar-movielist)
     - [6 - Adicione proptypes a todos os componentes](#6---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
@@ -216,9 +216,9 @@ Para executar os testes localmente, digite no terminal o comando `npm test`. Ini
 
 A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌ representa um teste falhando, enquanto um ✅ representa um teste correto. Naturalmente, no início todos os testes estarão falhando.
 
-Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizado na linha 38, não está definido.
+Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `<Header />`, utilizado na linha 38, não está definido.
 
-Se fizermos uma implementação simples do componente `Header`, que não renderiza nada:
+Se fizermos uma implementação simples do componente `<Header />`, que não renderiza nada:
 
 ```jsx
 import React from 'react';
@@ -231,7 +231,7 @@ class Header extends React.Component {
 export default Header;
 ```
 
-E descomentarmos a linha que importa o componente `Header` em `App.test.js`:
+E descomentarmos a linha que importa o componente `<Header />` em `App.test.js`:
 
 ```js
 // import App from './App';
@@ -301,26 +301,26 @@ Para melhor orientação nesse primeiro contato com React, os requisitos do proj
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
 ### 1 - Componente `<Header />`
-#### 1.1 - Crie um componente chamado `Header`
+#### 1.1 - Renderize o componente `<Header />`
 
 Esse componente representará o cabeçalho da página.
 
 **O que será verificado:**
 
-  - O componente `Header` é renderizado sem quebrar a aplicação.
+  - O componente `<Header />` é renderizado sem quebrar a aplicação.
 
-#### 1.2 - Renderize o texto "Movie Cards Library" dentro de `Header`
+#### 1.2 - Renderize o texto "Movie Cards Library" dentro de `<Header />`
 
 O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`
 
 **O que será verificado:**
 
   - O texto "Movie Cards Library" está dentro de uma tag `h1`.
-  - O `h1` deve ser renderizado pelo componente `Header`.
+  - O `h1` deve ser renderizado pelo componente `<Header />`.
 
 
 ### 2 - Componente `<MovieList />`
-#### 2.1 - Crie um componente chamado `MovieList`
+#### 2.1 - Renderize o componente `<MovieList />`
 
 Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
@@ -328,75 +328,75 @@ Este componente representará toda a área com os cartões de filmes. `MovieList
 
   - O componente `MovieList` é renderizado sem quebrar a aplicação.
 
-#### 2.2 - Renderize componentes `MovieCard` dentro de `MovieList`
+#### 2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`
 
-`MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
-
-**O que será verificado:**
-
-  - O componente `MovieList` renderiza a quantidade correta de `MovieCard`.
-
-#### 2.3 - Passe uma key para cada `MovieCard` renderizado
-
-`MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
+`MovieList` deve renderizar um componente `<MovieCard />` para cada objeto contido no array recebido na prop `movies`.
 
 **O que será verificado:**
 
- - Cada `MovieCard` renderizado tem como `key` o título do filme.
+  - O componente `MovieList` renderiza a quantidade correta de `<MovieCard />`.
+
+#### 2.3 - Passe uma key para cada `<MovieCard />` renderizado
+
+`MovieList` deve renderizar `<MovieCard />`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `<MovieCard />` deve receber uma prop `key` com o nome do filme.
+
+**O que será verificado:**
+
+ - Cada `<MovieCard />` renderizado tem como `key` o título do filme.
 
 ### 3 - Componente `<MovieCard />`
-#### 3.1 - Crie um componente chamado `MovieCard`
+#### 3.1 - Renderize o componente `<MovieCard />`
 
-Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
+Esse componente representa um cartão de filme. `<MovieCard />` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
 **O que será verificado:**
 
-  - O componente `MovieCard` é renderizado sem quebrar a aplicação.
+  - O componente `<MovieCard />` é renderizado sem quebrar a aplicação.
 
-#### 3.2 - Renderize a imagem do filme
+#### 3.2 - Renderize a imagem do filme dentro de uma tag `img`
 
-`MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
+`<MovieCard />` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
 
 **O que será verificado:**
 
   - A imagem é renderizada dentro de uma tag `img`.
   - O atributo `src` da imagem deve ter o valor de `imagePath`.
 
-#### 3.3 - Renderize o título do filme
+#### 3.3 - Renderize o título do filme dentro de uma tag `h4`
 
-`MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
+`<MovieCard />` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
 
 **O que será verificado:**
 
   - O título do filme é renderizado dentro de uma tag `h4`.
 
-#### 3.4 - Renderize o subtítulo do filme
+#### 3.4 - Renderize o subtítulo do filme dentro de uma tag `h5`
 
-`MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
+`<MovieCard />` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
 
 **O que será verificado:**
 
   - O subtítulo do filme é renderizado dentro de uma tag `h5`.
 
-#### 3.5 - Renderize a sinopse do filme
+#### 3.5 - Renderize a sinopse do filme dentro de uma tag `p`
 
-`MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
+`<MovieCard />` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
 **O que será verificado:**
 
   - A sinopse do filme é renderizada dentro de uma tag `p`.
 
-#### 3.6 - Renderize um componente `Rating` dentro de `MovieCard`
+#### 3.6 - Renderize o componente `<Rating />` dentro de `<MovieCard />`
 
-`MovieCard` deve renderizar um componente `Rating`.
+`<MovieCard />` deve renderizar um componente `Rating`.
 
 **O que será verificado:**
 
-  - O componente `Rating` é renderizado pelo `MovieCard`.
+  - O componente `Rating` é renderizado pelo `<MovieCard />`.
 
-#### 3.7 - Passe como prop para o componente `Rating` o atributo `rating`
+#### 3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`
 
-`MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
+`<MovieCard />` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
 
 **O que será verificado:**
 
@@ -404,7 +404,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
   - O valor da *prop* `rating` é a propriedade `rating` do filme.
 
 ### 4 - Componente `<Rating />`
-#### 4.1 - Crie um componente chamado `Rating`
+#### 4.1 - Renderize o componente `<Rating />`
 
 Esse componente representa a avaliação de um filme.
 
@@ -421,24 +421,24 @@ Esse componente representa a avaliação de um filme.
   - O componente `Rating` é renderizado dentro de um elemento com a classe `rating`.
 
 ### 5 - Componente `<App />`
-#### 5.1 - `App` deve renderizar `Header`
+#### 5.1 - Renderize `<Header />` dentro do componente `<App />`
 
-O componente `App` deve renderizar um componente `Header`.
-
-**O que será verificado:**
-
-  - Apenas um componente `Header` é renderizado pelo componente `App`.
-
-#### 5.2 - `App` deve renderizar `MovieList`
-
-O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
+O componente `<App />` deve renderizar um componente `<Header />`.
 
 **O que será verificado:**
 
-  - Apenas um componente `MovieList` é renderizado pelo componente `App`.
+  - Apenas um componente `<Header />` é renderizado pelo componente `<App />`.
+
+#### 5.2 - Renderize `<MovieList />` dentro do componente `<App />`
+
+O componente `<App />` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
+
+**O que será verificado:**
+
+  - Apenas um componente `MovieList` é renderizado pelo componente `<App />`.
   - `MovieList` recebe como *prop* `movie` a lista do arquivo `data.js`
 
-### 6 - Adicione proptypes a todos os componentes
+### 6 - Adicione PropTypes a todos os componentes
 
 Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O ESLint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
 
