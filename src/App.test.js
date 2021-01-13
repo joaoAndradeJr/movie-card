@@ -33,7 +33,7 @@ const movies = [
   },
 ];
 
-describe('1 - Crie um componente \'<Header />\'', () => {
+describe('1 - Crie um componente "<Header />"', () => {
   it('1.1 - Renderize o componente `<Header />`', () => {
     shallow(<Header />);
   });
@@ -45,7 +45,7 @@ describe('1 - Crie um componente \'<Header />\'', () => {
   });
 });
 
-describe('2 - Crie um componente \'<MovieList />\'', () => {
+describe('2 - Crie um componente "<MovieList />"', () => {
   it('2.1 - Renderize o componente `<MovieList />`', () => {
     shallow(<MovieList movies={movies} />);
   });
@@ -66,7 +66,7 @@ describe('2 - Crie um componente \'<MovieList />\'', () => {
   });
 });
 
-describe('3 - Crie um componente \'<MovieCard />\'', () => {
+describe('3 - Crie um componente "<MovieCard />"', () => {
   const movie = movies[0];
 
   it('3.1 - Renderize o componente `<MovieCard />`', () => {
@@ -112,7 +112,7 @@ describe('3 - Crie um componente \'<MovieCard />\'', () => {
   });
 });
 
-describe('4 - Crie um componente \'<Rating />\'', () => {
+describe('4 - Crie um componente "<Rating />"', () => {
   it('4.1 - Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
@@ -124,7 +124,7 @@ describe('4 - Crie um componente \'<Rating />\'', () => {
   });
 });
 
-describe('5 - Crie um componente \'<App />\'', () => {
+describe('5 - Crie um componente "<App />"', () => {
   it('5.1 - Renderize `<Header />` dentro do componente `<App />`', () => {
     wrapper = shallow(<App />);
 
