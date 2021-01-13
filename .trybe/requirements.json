@@ -1,18 +1,18 @@
 {
   "requirements": [{
-    "description": "1 - Crie um componente \"<Header />\"",
+    "description": "1 - Crie um componente `<Header />`",
     "bonus": false
   }, {
-    "description": "2 - Crie um componente \"<MovieList />\"",
+    "description": "2 - Crie um componente `<MovieList />`",
     "bonus": false
   }, {
-    "description": "3 - Crie um componente \"<MovieCard />\"",
+    "description": "3 - Crie um componente `<MovieCard />`",
     "bonus": false
   }, {
-    "description": "4 - Crie um componente \"<Rating />\"",
+    "description": "4 - Crie um componente `<Rating />`",
     "bonus": false
   }, {
-    "description": "5 - Crie um componente \"<App />\"",
+    "description": "5 - Crie um componente `<App />`",
     "bonus": false
   }]
 }
