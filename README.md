@@ -39,11 +39,11 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
       - [3.3 - Renderize o título do filme dentro de uma tag `h4`](#33---renderize-o-título-do-filme-dentro-de-uma-tag-h4)
       - [3.4 - Renderize o subtítulo do filme dentro de uma tag `h5`](#34---renderize-o-subtítulo-do-filme-dentro-de-uma-tag-h5)
       - [3.5 - Renderize a sinopse do filme dentro de uma tag `p`](#35---renderize-a-sinopse-do-filme-dentro-de-uma-tag-p)
-      - [3.6 - Renderize o componente `<Rating />` dentro de `<MovieCard />`](#36---renderize-o-componente-rating--dentro-de-moviecard-)
-      - [3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`](#37---passe-como-prop-para-o-componente-rating--o-atributo-rating)
     - [4 - Crie um componente `<Rating />`](#4---crie-um-componente-rating-)
       - [4.1 - Renderize o componente `<Rating />`](#41---renderize-o-componente-rating-)
       - [4.2 - Renderize a nota de um filme dentro de `Rating`](#42---renderize-a-nota-de-um-filme-dentro-de-rating)
+      - [4.3 - Renderize o componente `<Rating />` dentro de `<MovieCard />`](#43---renderize-o-componente-rating--dentro-de-moviecard-)
+      - [4.4 - Passe como prop para o componente `<Rating />` o atributo `rating`](#44---passe-como-prop-para-o-componente-rating--o-atributo-rating)
     - [5 - Crie um componente `<App />`](#1---crie-um-componente-app-)
       - [5.1 - Renderize `<Header />` dentro do componente `<App />`](#51---renderize-header--dentro-do-componente-app-)
       - [5.2 - Renderize `<MovieList />` dentro do componente `<App />`](#52---renderize-movielist--dentro-do-componente-app-)
@@ -169,28 +169,6 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 ---
 
-## Depois de terminar o desenvolvimento
-
-Para **"entregar"** seu projeto, siga os passos a seguir:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
-
-Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
-
-### Revisando um pull request
-
-
-À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
-
-Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
-
----
-
 # Como desenvolver
 
 Este repositório já contem um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
@@ -208,7 +186,7 @@ Cada componente representa uma parte específica do site, conforme ilustrado aba
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É importante que seus componentes tenham exatamente os nomes listados acima**.
 
-Todos os requisitos do projeto serão testados automaticamente. Os testes para cada requisitos estão no arquivo `src/App.test.js`. Gaste um tempo lendo-o para entender como os testes estão organizados.
+Todos os requisitos do projeto serão testados automaticamente. Os testes para cada requisitos estão na pasta `src/tests`. Gaste um tempo lendo os arquivos para entender como os testes estão organizados.
 
 Para executar os testes localmente, digite no terminal o comando `npm test`. Inicialmente, seus testes estarão assim:
 
@@ -231,14 +209,10 @@ class Header extends React.Component {
 export default Header;
 ```
 
-E descomentarmos a linha que importa o componente `<Header />` em `App.test.js`:
+E descomentarmos a linha que importa o componente `<Header />` em `header.test.js`:
 
 ```js
-// import App from './App';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
-// import MovieList from './components/MovieList';
-// import Rating from './components/Rating';
 ```
 
 Veremos que o primeiro teste agora passa:
@@ -301,9 +275,10 @@ Para melhor orientação nesse primeiro contato com React, os requisitos do proj
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
 ### 1 - Crie um componente `<Header />`
+
 #### 1.1 - Renderize o componente `<Header />`
 
-Esse componente representará o cabeçalho da página.
+Criar um componente que represente o cabeçalho da página.
 
 **O que será verificado:**
 
@@ -316,13 +291,14 @@ O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro 
 **O que será verificado:**
 
   - O texto "Movie Cards Library" está dentro de uma tag `h1`.
+
   - O `h1` deve ser renderizado pelo componente `<Header />`.
 
-
 ### 2 - Crie um componente `<MovieList />`
+
 #### 2.1 - Renderize o componente `<MovieList />`
 
-Este componente representará toda a área com os cartões de filmes. `<MovieList />` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
+Crie um componente que represente toda a área com os cartões de filmes. `<MovieList />` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
 **O que será verificado:**
 
@@ -345,9 +321,10 @@ Este componente representará toda a área com os cartões de filmes. `<MovieLis
  - Cada `<MovieCard />` renderizado tem como `key` o título do filme.
 
 ### 3 - Crie um componente `<MovieCard />`
+
 #### 3.1 - Renderize o componente `<MovieCard />`
 
-Esse componente representa um cartão de filme. `<MovieCard />` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
+Crie um componente que represente um cartão de filme. `<MovieCard />` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
 **O que será verificado:**
 
@@ -360,6 +337,7 @@ Esse componente representa um cartão de filme. `<MovieCard />` deve receber uma
 **O que será verificado:**
 
   - A imagem é renderizada dentro de uma tag `img`.
+
   - O atributo `src` da imagem deve ter o valor de `imagePath`.
 
 #### 3.3 - Renderize o título do filme dentro de uma tag `h4`
@@ -386,27 +364,11 @@ Esse componente representa um cartão de filme. `<MovieCard />` deve receber uma
 
   - A sinopse do filme é renderizada dentro de uma tag `p`.
 
-#### 3.6 - Renderize o componente `<Rating />` dentro de `<MovieCard />`
-
-`<MovieCard />` deve renderizar um componente `<Rating />`.
-
-**O que será verificado:**
-
-  - O componente `<Rating />` é renderizado pelo `<MovieCard />`.
-
-#### 3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`
-
-`<MovieCard />` deve passar para o componente `<Rating />` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
-
-**O que será verificado:**
-
-  - O componente `<Rating />` recebe uma `prop` chamada `rating`.
-  - O valor da *prop* `rating` é a propriedade `rating` do filme.
-
 ### 4 - Crie um componente `<Rating />`
+
 #### 4.1 - Renderize o componente `<Rating />`
 
-Esse componente representa a avaliação de um filme.
+Crie um componente que represente a avaliação de um filme.
 
 **O que será verificado:**
 
@@ -420,7 +382,26 @@ Esse componente representa a avaliação de um filme.
 
   - O componente `<Rating />` é renderizado dentro de um elemento com a classe `rating`.
 
+#### 4.3 - Renderize o componente `<Rating />` dentro de `<MovieCard />`
+
+`<MovieCard />` deve renderizar um componente `<Rating />`.
+
+**O que será verificado:**
+
+  - O componente `<Rating />` é renderizado pelo `<MovieCard />`.
+
+#### 4.4 - Passe como prop para o componente `<Rating />` o atributo `rating`
+
+`<MovieCard />` deve passar para o componente `<Rating />` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
+
+**O que será verificado:**
+
+  - O componente `<Rating />` recebe uma `prop` chamada `rating`.
+
+  - O valor da *prop* `rating` é a propriedade `rating` do filme.
+
 ### 5 - Crie um componente `<App />`
+
 #### 5.1 - Renderize `<Header />` dentro do componente `<App />`
 
 O componente `<App />` deve renderizar um componente `<Header />`.
@@ -436,11 +417,33 @@ O componente `<App />` deve renderizar um componente `<MovieList />`, passando c
 **O que será verificado:**
 
   - Apenas um componente `<MovieList />` é renderizado pelo componente `<App />`.
+  
   - `<MovieList />` recebe como *prop* `movie` a lista do arquivo `data.js`
 
 ### 6 - Adicione PropTypes a todos os componentes
 
 Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O ESLint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
+
+---
+
+## Depois de terminar o desenvolvimento
+
+Para **"entregar"** seu projeto, siga os passos a seguir:
+
+* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
+
+Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
+
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
+
+### Revisando um pull request
+
+À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
+
+Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
 
 ---
 
