@@ -39,7 +39,7 @@
     "description": "13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`",
     "bonus": false
   }, {
-    "description": "14 - Passe como prop para o componente `<Rating />` o atributo `rating`",
+    "description": "14 - Passe como prop para o componente `<Rating/>` o atributo `rating`",
     "bonus": false
   }, {
     "description": "15 - Crie um componente `<App />`",
