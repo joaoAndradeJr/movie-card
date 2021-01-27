@@ -9,7 +9,7 @@
     "description": "3 - Crie um componente `<MovieList />`",
     "bonus": false
   }, {
-    "description": "4 - Renderize componentes `<MovieCard />` dentro de `MovieList`",
+    "description": "4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`",
     "bonus": false
   }, {
     "description": "5 - Passe uma key para cada `<MovieCard />` renderizado",

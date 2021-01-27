@@ -29,7 +29,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [1 - Crie um componente `<Header />`](#1---crie-um-componente-header-)
     - [2 - Renderize um texto no `<Header />`](#2---Renderize-um-texto-no-)
     - [3 - Crie um componente `<MovieList />`](#3---Crie-um-componente-)
-    - [4 - Renderize componentes `<MovieCard />` dentro de `MovieList`](#4---Renderize-componentes-moviecard-dentro-de-)
+    - [4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`](#4---Renderize-componentes-moviecard-dentro-de-)
     - [5 - Passe uma key para cada `<MovieCard />` renderizado](#5---Passe-uma-key-para-cada-moviecard-renderizado)
     - [6 - Crie um componente `<MovieCard />`](#6---Crie-um-componente-)
     - [7 - Renderize a imagem do filme dentro de uma tag `img`](#7---Renderize-a-imagem-do-filme-dentro-de-uma-tag-)
@@ -297,7 +297,7 @@ Crie um componente que represente toda a área com os cartões de filmes. `<Movi
 
   - Renderize o componente `<MovieList />`
 
-### 4 - Renderize componentes `<MovieCard />` dentro de `MovieList`
+### 4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`
 
 `<MovieList />` deve renderizar um componente `<MovieCard />` para cada objeto contido no array recebido na prop `movies`.
 
