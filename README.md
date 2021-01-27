@@ -98,6 +98,9 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
     * `npm install`
+    
+    Atenção :atenção:: Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
+
   * Inicialize o projeto:
     * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
   * Verifique que os testes estão executando:
@@ -202,16 +205,6 @@ class Header extends React.Component {
 }
 
 export default Header;
-```
-
-E descomentarmos a linha que importa o componente `<Header />` em `App.test.js`:
-
-```js
-// import App from './App';
-import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
-// import MovieList from './components/MovieList';
-// import Rating from './components/Rating';
 ```
 
 Veremos que o primeiro teste agora passa:
