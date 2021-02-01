@@ -19,8 +19,6 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-    - [Revisando um pull request](#revisando-um-pull-request)
 - [Como desenvolver](#como-desenvolver)
   - [Linter](#linter)
   - [Dica: desativando testes](#dica-desativando-testes)
@@ -43,6 +41,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [15 - Crie um componente `<App />`](#15---Crie-um-componente-)
     - [16 - Renderize `<MovieList />` dentro do componente `<App />`](#16---Renderize-movielist-dentro-do-componente-)
     - [17 - Adicione PropTypes a todos os componentes](#17---adicione-proptypes-a-todos-os-componentes)
+- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
+- [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
