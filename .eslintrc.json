@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true
   },
   "extends": ["plugin:react/recommended", "airbnb", "eslint:recommended"],
   "parserOptions": {
@@ -49,7 +50,7 @@
     ],
     "max-params": ["error", 4],
     "max-lines": ["error", 250],
-    "max-lines-per-function": ["error", 20],
+    "max-lines-per-function": ["error", 30],
     "complexity": ["error", 15],
     "object-curly-newline": ["off"],
     "import/no-extraneous-dependencies": ["off"],
@@ -70,7 +71,7 @@
     "sonarjs/no-useless-catch": ["error"],
     "sonarjs/prefer-object-literal": ["error"],
     "sonarjs/prefer-single-boolean-return": ["error"],
-    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/default-props-match-prop-types": [
       "error",
       {"allowRequiredDefaults": false}
