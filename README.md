@@ -115,16 +115,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-movie-cards-library`
 
-4. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
-  * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-project-movie-cards-library**_
-  * Crie a pasta `components` e o arquivo `Header.jsx`
-    * Exemplo:
-      * `mkdir src/components`
-      * `touch src/components/Header.jsx`
-      * `echo "// Iniciando o projeto 🚀" > src/components/Header.jsx`
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+4. Adicione alguma mudança ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
     * Exemplo: `git status` (deve aparecer listada a pasta _components_ em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
@@ -136,10 +127,10 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
         * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
+5. Adicione a sua branch com o novo `commit` ao repositório remoto
   * Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library`
 
-7. Crie um novo `Pull Request` _(PR)_
+6. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
