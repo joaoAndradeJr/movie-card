@@ -90,6 +90,8 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 ## Antes de começar a desenvolver
 
+⚠️ **Certifique-se de que você está usando a versão [LTS](https://nodejs.org/en/) do node** ⚠️ 
+
 1. Clone o repositório
   * `git clone https://github.com/tryber/sd-0x-project-movie-cards-library.git`.
   * Entre na pasta do repositório que você acabou de clonar:
