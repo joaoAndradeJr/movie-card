@@ -41,6 +41,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [15 - Crie um componente `<App />`](#15---crie-um-componente-app-)
     - [16 - Renderize `<MovieList />` dentro do componente `<App />`](#16---renderize-movielist--dentro-do-componente-app-)
     - [17 - Adicione PropTypes a todos os componentes](#17---adicione-proptypes-a-todos-os-componentes)
+    - [Opcional - Adicione CSS ao seu projeto](#opcional---adicione-css-ao-seu-projeto)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
 - [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
@@ -395,6 +396,10 @@ O componente `<App />` deve renderizar um componente `<MovieList />`, passando c
 ### 17 - Adicione PropTypes a todos os componentes
 
 Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O ESLint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
+
+### Opcional - Adicione CSS ao seu projeto
+
+Para que o seu projeto fique mais bonito e agradável, disponibilizamos algumas classes CSS no arquivo `App.css`. Aproveite e utilize-as! 
 
 ---
 
